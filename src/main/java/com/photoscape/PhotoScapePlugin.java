@@ -348,8 +348,8 @@ public class PhotoScapePlugin extends Plugin
         // Q/E vertical movement
         if (moveUp || moveDown)
         {
-            double vSpeed = config.heightSpeed() * 8.0;
-            double dy = 0;
+            float vSpeed = config.heightSpeed() * 8f;
+            float dy = 0f;
             if (moveUp) dy += vSpeed;
             if (moveDown) dy -= vSpeed;
             client.setCameraFocalPointY(client.getCameraFocalPointY() + dy);
